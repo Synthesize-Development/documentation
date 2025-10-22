@@ -41,6 +41,6 @@ Locksy aims to provide user saftey and easily allow the linking of roblox games 
 
 1. Read the [`Terms of Service & Privacy Policy`](https://docs.google.com/document/d/1ue-ZT0T8I2aOqxhG4e_r68Sqrrw-1DcP0undi3v0d3k/edit?usp=sharing)
 2. Add the [`Locksy`](https://discord.com/oauth2/authorize?client_id=1352436491896225834&scope=applications.commands%20bot&permissions=8) bot to your main discord server
-3. Add the [`Locksy`]() package to your roblox game under `game.ServerScriptService`
+3. Add the [`Locksy`]() model to your roblox game under `game.ServerScriptService`
 
 [^1]: A green check indicates an added feature, a grey check indicates a beta or work-in-progress feature

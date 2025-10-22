@@ -7,6 +7,7 @@ theme:
   features:
     - navigation.footer
     - content.footnote.tooltips
+    - content.tabs.link
   extra:
     social:
       - icon: simple/youtube
@@ -48,6 +49,8 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 nav:
   - Home: index.md
