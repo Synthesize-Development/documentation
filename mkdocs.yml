@@ -4,6 +4,16 @@ theme:
   name: material
   logo: assets/synthesize.png
   favicon: assets/synthesize.png
+  features:
+    - navigation.footer
+    - content.footnote.tooltips
+  extra:
+    social:
+      - icon: simple/youtube
+        link: https://youtube.com/@james-willett
+      - icon: simple/linkedin
+        link: https://linkedin.com/in/willettjames
+  copyright: Copyright &copy; 2025 Synthesize
   palette:
     - scheme: slate
       toggle:
@@ -14,6 +24,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Light Mode
+  
 
 markdown_extensions:
   - attr_list
@@ -27,4 +38,20 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - md_in_html
+  - pymdownx.blocks.caption
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Locksy:
+    - Overview: locksy.md
+    - Discord Commands: locksy-discord.md
+    - Roblox Module: locksy-roblox.md

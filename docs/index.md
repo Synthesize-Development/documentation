@@ -1,36 +1,25 @@
-# Welcome to MkDocs
+# Synthesize
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+### About
 
-## Commands
+Synthesize aims to deliver high quality products to all our users while putting saftey as our #1 priority
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+----------
 
-## Project layout
+# Products
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Locksy
 
-i like :beers:
+<div class="result" markdown>
 
-```py title="add exp" linenums="1" hl_lines="3-4"
-local module = require(game:GetService("ReplicatedStorage").Locksy)
+![Locksy Logo](./assets/locksyCircle.png){ align=left width=100 }
 
-module.AddEXP(pla, 2)
-module.AddEXP(pla, 4)
-module.AddEXP(pla, 5)
-module.AddEXP(pla, 7)
-```
+Locksy serves as the core symbol of what we aim to achive at synthesize. It bundles great features and child saftety tools into one package.
 
-!!! note "Your Gay!"
+[Read More](./locksy.md)
 
-    did you know that ur super freaking gay?
+</div>
 
-??? info "psst"
+### More Soon!
 
-    Your still super freaking gay
+
