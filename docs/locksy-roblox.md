@@ -1,6 +1,4 @@
-# Roblox Module
-
-## Settings
+# Settings
 
 ### `API_KEY`
 This key is given to you when setting up the bot. You can either store the key as plain text here or as a secret
@@ -8,13 +6,13 @@ This key is given to you when setting up the bot. You can either store the key a
 === "Plain Text"
 
     ```lua
-    API_KEY = "EXAMPLEKEY_1234567"
+    API_KEY = "EXAMPLEKEY_1234567";
     ```
 
 === "Roblox Secret"
 
     ```lua
-    API_KEY = game:GetService("HttpService"):GetSecret("API_KEY")
+    API_KEY = game:GetService("HttpService"):GetSecret("API_KEY");
     ```
 
 ### `PROFILE_SERVICE`
@@ -49,6 +47,47 @@ If you are currently using profile service, put its path here
     end
     ```
 
+### `ENFORCE_BAN_LIST`
+When a player who is on our list of known predators and bad actors joins your game should it 
+
+---------
+
+# API
+
+## Types
+
+### XP_Return
+```lua
+type XP_Return = {
+    Status: boolean,        --Successfull?
+    XP_Val: number,         --Users new XP value (-1 if error)
+    Last_Updated: number    --UNIX Timestamp (-1 if error)
+}
 ```
-module.
+
+------
+
+## Functions
+
+The main `LOCKSY` module script contains all the function you will ever need to call. They are all described below.
+
+### GetUserXP
+
+Gets a users XP value
+```lua
+Locksy.GetUserXP(userid :number) :XP_Return
+```
+
+### SetUserXP
+
+Sets a users XP value
+```lua
+Locksy.SetUserXP(userid :number) :XP_Return
+```
+
+### UpdateUserXP
+
+Sets a users XP value
+```lua
+Locksy.UpdateUserXP(userid :number, ammount :number) :XP_Return
 ```
