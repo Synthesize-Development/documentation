@@ -56,6 +56,29 @@ When a player who is on our list of known predators and bad actors joins your ga
 
 ## Types
 
+### LocksyTier
+```lua
+type LocksyTier = "FREE" | "PAID"
+```
+
+### PossibleAddons
+Describes what addons are available
+```lua
+type PossibleAddons = "MEDALS AND QUALIFICATIONS" | "CUSTOM UNIFORMS" | "FACTIONS"
+```
+
+### Info_Return
+```lua
+type Info_Return = {
+    Status: boolean,                --Did it work?
+    GroupName: string,              --Name of the group
+    GroupID: number,                --ID of the group
+    VerifiedMembers: number,        --How many members from your group in the system
+    LocksyTier: LocksyTier,          --What tier are you running
+    LocksyAddons: {PossibleAddons}, --List of all active addons
+}
+```
+
 ### XP_Return
 ```lua
 type XP_Return = {
@@ -65,11 +88,20 @@ type XP_Return = {
 }
 ```
 
+
+
 ------
 
 ## Functions
 
 The main `LOCKSY` module script contains all the function you will ever need to call. They are all described below.
+
+### GetInfo
+
+Gets information about this groups running Locksy instance
+```lua
+Locksy.GetInfo() :Info_Return
+```
 
 ### GetUserXP
 
@@ -80,14 +112,14 @@ Locksy.GetUserXP(userid :number) :XP_Return
 
 ### SetUserXP
 
-Sets a users XP value
+Sets a users XP value to the given value
 ```lua
-Locksy.SetUserXP(userid :number) :XP_Return
+Locksy.SetUserXP(userid :number, value :number) :XP_Return
 ```
 
 ### UpdateUserXP
 
-Sets a users XP value
+Changes a users XP value by the ammount
 ```lua
 Locksy.UpdateUserXP(userid :number, ammount :number) :XP_Return
 ```
