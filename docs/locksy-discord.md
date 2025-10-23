@@ -1,15 +1,17 @@
 # Locksy Discord Commands
 
-```
-/setrank {member: user} {rank: role}
-```
+### Setup
 
-Sets a users rank
+Sets up your server for your main roblox group
+```
+/setup (groupid)
+```
 
 --------------
 
-```
-/setup
-```
+### Profile
 
-Does the shit and yuh
+Gets your current stats for this group
+```
+/profile
+```
