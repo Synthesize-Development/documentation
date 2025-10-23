@@ -8,13 +8,6 @@ theme:
     - navigation.footer
     - content.footnote.tooltips
     - content.tabs.link
-  extra:
-    social:
-      - icon: simple/youtube
-        link: https://youtube.com/@james-willett
-      - icon: simple/linkedin
-        link: https://linkedin.com/in/willettjames
-  copyright: Copyright &copy; 2025 Synthesize
   palette:
     - scheme: slate
       toggle:
@@ -26,6 +19,12 @@ theme:
         icon: material/weather-sunny
         name: Light Mode
   
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/6PbefPhxme
+    - icon: fontawesome/solid/globe
+      link: https://synthesizedev.org
 
 markdown_extensions:
   - attr_list
@@ -51,6 +50,8 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
 
 nav:
   - Home: index.md
