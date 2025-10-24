@@ -1,6 +1,6 @@
-# Settings
+## Settings
 
-### `API_KEY`
+### API_KEY
 This key is given to you when setting up the bot. You can either store the key as plain text here or as a secret
 
 === "Plain Text"
@@ -15,7 +15,7 @@ This key is given to you when setting up the bot. You can either store the key a
     API_KEY = game:GetService("HttpService"):GetSecret("API_KEY");
     ```
 
-### `PROFILE_SERVICE`
+### PROFILE_SERVICE
 If you are currently using profile service, put its path here
 
 === "Default"
@@ -47,12 +47,33 @@ If you are currently using profile service, put its path here
     end
     ```
 
-### `ENFORCE_BAN_LIST`
-When a player who is on our list of known predators and bad actors joins your game should it 
+### ENFORCE_BAN_LIST
+When a player who is on our list of known predators and bad actors joins your game should it kick them
 
----------
+### ERP_API_KEY
+If you get approved for an API_KEY from [Ruben Sim's erpsearcher](https://erpsearcher.com/dashboard) you can put it here and we will handle kicking them
 
-# API
+=== "No Key"
+
+    ```lua
+    ERP_API_KEY = "";
+    ```
+
+=== "API Key"
+
+    ```lua
+    ERP_API_KEY = "SEARCHER_example1234567example1234567";
+    ```
+
+### WEBHOOK
+Place your webhook here for all moderation actions to be logged
+
+```lua
+WEBHOOK = "https://discord.com/api/webhooks/1234567890/example1234567_example1234567890";
+```
+
+----------
+
 
 ## Types
 

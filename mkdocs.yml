@@ -8,6 +8,7 @@ theme:
     - navigation.footer
     - content.footnote.tooltips
     - content.tabs.link
+    - toc.integrate
   palette:
     - scheme: slate
       toggle:
@@ -52,6 +53,8 @@ markdown_extensions:
       alternate_style: true
   - toc:
       permalink: true
+      title: On this page
+      toc_depth: 1-3
 
 nav:
   - Home: index.md
