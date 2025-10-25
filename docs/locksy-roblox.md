@@ -95,7 +95,7 @@ type Info_Return = {
     GroupName: string,              --Name of the group
     GroupID: number,                --ID of the group
     VerifiedMembers: number,        --How many members from your group in the system
-    LocksyTier: LocksyTier,          --What tier are you running
+    LocksyTier: LocksyTier,         --What tier are you running
     LocksyAddons: {PossibleAddons}, --List of all active addons
 }
 ```
