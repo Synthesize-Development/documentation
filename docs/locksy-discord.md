@@ -15,3 +15,4 @@ Gets your current stats for this group
 ```
 /profile
 ```
+

@@ -56,7 +56,7 @@ If you get approved for an API_KEY from [Ruben Sim's erpsearcher](https://erpsea
 === "No Key"
 
     ```lua
-    ERP_API_KEY = "";
+    ERP_API_KEY = nil;
     ```
 
 === "API Key"
