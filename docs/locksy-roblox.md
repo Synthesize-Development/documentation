@@ -34,16 +34,11 @@ If you are currently using profile service, put its path here
     PROFILE_SERVICE = game:GetService("ServerScriptService").ProfileHandeler;
     ```
 
-    Your custom ProfileHandeler must contain the following methods
+    Your custom ProfileHandeler must contain the following method
 
     ```lua
     module.GetProfile = function(player :Player) :table
-        return *THE PLAYERS PROFILE DATA*
-    end
-
-    module.SetProfile = function(player :Player, val :table) :boolean
-        *SET THE PLAYERS DATA TO THE VAL*
-        return true
+        return *THE PLAYERS PROFILE*
     end
     ```
 
