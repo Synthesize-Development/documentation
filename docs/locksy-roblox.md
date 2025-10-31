@@ -45,6 +45,16 @@ If you are currently using profile service, put its path here
 ### ENFORCE_BAN_LIST
 When a player who is on our list of known predators and bad actors joins your game should it kick them
 
+=== "Enabled"
+    ```lua
+    ENFORCE_BAN_LIST = true;
+    ```
+
+=== "Disabled"
+    ```lua
+    ENFORCE_BAN_LIST = false;
+    ```
+
 ### ERP_API_KEY
 If you get approved for an API_KEY from [Ruben Sim's erpsearcher](https://erpsearcher.com/dashboard) you can put it here and we will handle kicking them
 
@@ -63,9 +73,14 @@ If you get approved for an API_KEY from [Ruben Sim's erpsearcher](https://erpsea
 ### WEBHOOK
 Place your webhook here for all moderation actions to be logged
 
-```lua
-WEBHOOK = "https://discord.com/api/webhooks/1234567890/example1234567_example1234567890";
-```
+=== "Enabled"
+    ```lua
+    WEBHOOK = "https://discord.com/api/webhooks/1234567890/example1234567_example1234567890";
+    ```
+=== "Disabled"
+    ```lua
+    WEBHOOK = "";
+    ```
 
 ----------
 
